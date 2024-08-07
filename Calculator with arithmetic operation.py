@@ -1,0 +1,31 @@
+def calculater():
+    print("simple calculater")
+
+    a = float(input("Enter the first number:"))
+    b = float(input(" Enter the second number:"))
+
+    print("Choose an operation:")
+    print("Addition (+)")
+    print("Substraction (-)")
+    print("Multiplication (*)")
+    print("Division (/)")
+
+    operation = input("Enter the operation (+, -, *, /):")
+
+    if operation == '+':
+        result = a + b
+    elif operation == '-':
+        result = a - b
+    elif operation == '*':
+        result = a * b
+    elif operation == '/':
+        if b != 0:
+            result = a / b
+        else:
+            result = "Error!"
+
+    print(f"The result is: {result}")
+calculater()        
+
+
+
